@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		65EB9B811D9C70AB008DC007 /* MVFeedbackBannerFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65EB9B881D9C70E0008DC007 /* FeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EB9B871D9C70E0008DC007 /* FeedbackBanner.xib */; };
+		65EB9B8A1D9C711E008DC007 /* FeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B891D9C711E008DC007 /* FeedbackBanner.swift */; };
+		65EB9B8C1D9C74BC008DC007 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B8B1D9C74BC008DC007 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBannerFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVFeedbackBannerFlow.h; sourceTree = "<group>"; };
 		65EB9B801D9C70AB008DC007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65EB9B871D9C70E0008DC007 /* FeedbackBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackBanner.xib; sourceTree = "<group>"; };
+		65EB9B891D9C711E008DC007 /* FeedbackBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackBanner.swift; sourceTree = "<group>"; };
+		65EB9B8B1D9C74BC008DC007 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,9 @@
 			children = (
 				65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */,
 				65EB9B801D9C70AB008DC007 /* Info.plist */,
+				65EB9B871D9C70E0008DC007 /* FeedbackBanner.xib */,
+				65EB9B891D9C711E008DC007 /* FeedbackBanner.swift */,
+				65EB9B8B1D9C74BC008DC007 /* RoundedButton.swift */,
 			);
 			path = MVFeedbackBannerFlow;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 				TargetAttributes = {
 					65EB9B7B1D9C70AA008DC007 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EB9B881D9C70E0008DC007 /* FeedbackBanner.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EB9B8A1D9C711E008DC007 /* FeedbackBanner.swift in Sources */,
+				65EB9B8C1D9C74BC008DC007 /* RoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +252,7 @@
 		65EB9B851D9C70AB008DC007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +264,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBannerFlow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +272,7 @@
 		65EB9B861D9C70AB008DC007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
