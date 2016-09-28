@@ -6,7 +6,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackBanner" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
+            <connections>
+                <outlet property="negativeButton" destination="WEu-5x-XxU" id="Ujc-Fn-9WC"/>
+                <outlet property="positiveButton" destination="CgY-By-u19" id="WVg-eu-Tu7"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedbackBanner" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="278" height="106"/>

@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MVFeedbackBannerFlowDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>650BFBDE1D9C78F400146E4D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>65EB9B7B1D9C70AA008DC007</key>
 		<dict>
 			<key>primary</key>

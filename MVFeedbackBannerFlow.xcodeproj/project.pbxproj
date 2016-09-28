@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650BFBE21D9C78F400146E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BFBE11D9C78F400146E4D /* AppDelegate.swift */; };
+		650BFBE41D9C78F400146E4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BFBE31D9C78F400146E4D /* ViewController.swift */; };
+		650BFBE71D9C78F400146E4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650BFBE51D9C78F400146E4D /* Main.storyboard */; };
+		650BFBE91D9C78F400146E4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 650BFBE81D9C78F400146E4D /* Assets.xcassets */; };
+		650BFBEC1D9C78F400146E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 650BFBEA1D9C78F400146E4D /* LaunchScreen.storyboard */; };
 		65EB9B811D9C70AB008DC007 /* MVFeedbackBannerFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65EB9B881D9C70E0008DC007 /* FeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EB9B871D9C70E0008DC007 /* FeedbackBanner.xib */; };
 		65EB9B8A1D9C711E008DC007 /* FeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B891D9C711E008DC007 /* FeedbackBanner.swift */; };
@@ -14,6 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVFeedbackBannerFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BFBE11D9C78F400146E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		650BFBE31D9C78F400146E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		650BFBE61D9C78F400146E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		650BFBE81D9C78F400146E4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		650BFBEB1D9C78F400146E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		650BFBED1D9C78F400146E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBannerFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVFeedbackBannerFlow.h; sourceTree = "<group>"; };
 		65EB9B801D9C70AB008DC007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,6 +35,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		650BFBDC1D9C78F400146E4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65EB9B781D9C70AA008DC007 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,10 +52,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		650BFBE01D9C78F400146E4D /* MVFeedbackBannerFlowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				650BFBE11D9C78F400146E4D /* AppDelegate.swift */,
+				650BFBE31D9C78F400146E4D /* ViewController.swift */,
+				650BFBE51D9C78F400146E4D /* Main.storyboard */,
+				650BFBE81D9C78F400146E4D /* Assets.xcassets */,
+				650BFBEA1D9C78F400146E4D /* LaunchScreen.storyboard */,
+				650BFBED1D9C78F400146E4D /* Info.plist */,
+			);
+			path = MVFeedbackBannerFlowDemo;
+			sourceTree = "<group>";
+		};
 		65EB9B721D9C70AA008DC007 = {
 			isa = PBXGroup;
 			children = (
 				65EB9B7E1D9C70AB008DC007 /* MVFeedbackBannerFlow */,
+				650BFBE01D9C78F400146E4D /* MVFeedbackBannerFlowDemo */,
 				65EB9B7D1D9C70AB008DC007 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */,
+				650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +109,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		650BFBDE1D9C78F400146E4D /* MVFeedbackBannerFlowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlowDemo" */;
+			buildPhases = (
+				650BFBDB1D9C78F400146E4D /* Sources */,
+				650BFBDC1D9C78F400146E4D /* Frameworks */,
+				650BFBDD1D9C78F400146E4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MVFeedbackBannerFlowDemo;
+			productName = MVFeedbackBannerFlowDemo;
+			productReference = 650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65EB9B841D9C70AB008DC007 /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlow" */;
@@ -99,9 +150,14 @@
 		65EB9B731D9C70AA008DC007 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = musevisions;
 				TargetAttributes = {
+					650BFBDE1D9C78F400146E4D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					65EB9B7B1D9C70AA008DC007 = {
 						CreatedOnToolsVersion = 8.0;
 						LastSwiftMigration = 0800;
@@ -115,6 +171,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 65EB9B721D9C70AA008DC007;
 			productRefGroup = 65EB9B7D1D9C70AB008DC007 /* Products */;
@@ -122,11 +179,22 @@
 			projectRoot = "";
 			targets = (
 				65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */,
+				650BFBDE1D9C78F400146E4D /* MVFeedbackBannerFlowDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		650BFBDD1D9C78F400146E4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BFBEC1D9C78F400146E4D /* LaunchScreen.storyboard in Resources */,
+				650BFBE91D9C78F400146E4D /* Assets.xcassets in Resources */,
+				650BFBE71D9C78F400146E4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65EB9B7A1D9C70AA008DC007 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +206,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		650BFBDB1D9C78F400146E4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650BFBE41D9C78F400146E4D /* ViewController.swift in Sources */,
+				650BFBE21D9C78F400146E4D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65EB9B771D9C70AA008DC007 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -149,7 +226,50 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		650BFBE51D9C78F400146E4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650BFBE61D9C78F400146E4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		650BFBEA1D9C78F400146E4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				650BFBEB1D9C78F400146E4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		650BFBEE1D9C78F400146E4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MVFeedbackBannerFlowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBannerFlowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		650BFBEF1D9C78F400146E4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MVFeedbackBannerFlowDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBannerFlowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		65EB9B821D9C70AB008DC007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -291,6 +411,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				650BFBEE1D9C78F400146E4D /* Debug */,
+				650BFBEF1D9C78F400146E4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBannerFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -307,6 +435,7 @@
 				65EB9B861D9C70AB008DC007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
