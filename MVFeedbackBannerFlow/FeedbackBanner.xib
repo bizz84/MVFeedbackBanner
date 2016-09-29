@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,65 +14,70 @@
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedbackBanner" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="278" height="106"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="114"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SrI-K2-c4Q">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you enjoying this app?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="304" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-4y-2bb">
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gil-jI-Hne">
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you enjoying this app?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxV-4y-2bb">
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="d7u-PN-1Gs">
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEu-5x-XxU" customClass="RoundedButton" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                    <state key="normal" title="No, not really">
-                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
-                                            <integer key="value" value="15"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-By-u19" customClass="RoundedButton" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                    <state key="normal" title="Yes!">
-                                        <color key="titleColor" red="0.078431372550000003" green="0.62745098040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                            <real key="value" value="15"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                            </subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEu-5x-XxU" customClass="RoundedButton" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
                             <constraints>
-                                <constraint firstItem="CgY-By-u19" firstAttribute="width" secondItem="WEu-5x-XxU" secondAttribute="width" id="Xp4-P7-ZvK"/>
+                                <constraint firstAttribute="width" constant="135" id="L8s-mi-Q6e"/>
                             </constraints>
-                        </stackView>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="No, not really">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-By-u19" customClass="RoundedButton" customModule="MVFeedbackBannerFlow" customModuleProvider="target">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <state key="normal" title="Yes!">
+                                <color key="titleColor" red="0.078431372550000003" green="0.62745098040000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                     </subviews>
-                    <edgeInsets key="layoutMargins" top="15" left="8" bottom="15" right="8"/>
-                </stackView>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="CgY-By-u19" firstAttribute="top" secondItem="gil-jI-Hne" secondAttribute="top" id="5za-lM-obl"/>
+                        <constraint firstAttribute="bottom" secondItem="CgY-By-u19" secondAttribute="bottom" id="7oo-5E-bLs"/>
+                        <constraint firstItem="WEu-5x-XxU" firstAttribute="width" secondItem="CgY-By-u19" secondAttribute="width" id="AjF-Rd-ckk"/>
+                        <constraint firstAttribute="centerX" secondItem="WEu-5x-XxU" secondAttribute="trailing" constant="10" id="CNS-P6-7Ki"/>
+                        <constraint firstAttribute="bottom" secondItem="WEu-5x-XxU" secondAttribute="bottom" id="GAj-U6-LqL"/>
+                        <constraint firstItem="WEu-5x-XxU" firstAttribute="top" secondItem="gil-jI-Hne" secondAttribute="top" id="Nwz-yN-ljA"/>
+                        <constraint firstAttribute="height" constant="44" id="T0H-fd-wqE"/>
+                        <constraint firstItem="CgY-By-u19" firstAttribute="leading" secondItem="gil-jI-Hne" secondAttribute="centerX" constant="10" id="lZi-qP-3wL"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="0.078431372549019607" green="0.62745098039215685" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="SrI-K2-c4Q" secondAttribute="bottom" id="FPE-GV-s8L"/>
-                <constraint firstItem="SrI-K2-c4Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TAl-Si-5Kj"/>
-                <constraint firstAttribute="trailing" secondItem="SrI-K2-c4Q" secondAttribute="trailing" id="hyC-DL-EKF"/>
-                <constraint firstItem="SrI-K2-c4Q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tq6-o0-esV"/>
+                <constraint firstItem="gil-jI-Hne" firstAttribute="top" secondItem="mxV-4y-2bb" secondAttribute="bottom" constant="5" id="HZs-5F-iow"/>
+                <constraint firstAttribute="bottom" secondItem="gil-jI-Hne" secondAttribute="bottom" constant="8" id="LaF-TT-O11"/>
+                <constraint firstAttribute="trailing" secondItem="mxV-4y-2bb" secondAttribute="trailing" constant="8" id="P4s-W3-bLR"/>
+                <constraint firstItem="mxV-4y-2bb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="bQY-sI-meq"/>
+                <constraint firstItem="gil-jI-Hne" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lId-6k-mPR"/>
+                <constraint firstItem="mxV-4y-2bb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="nmq-Hu-oSj"/>
+                <constraint firstAttribute="trailing" secondItem="gil-jI-Hne" secondAttribute="trailing" id="tlH-KJ-bgE"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <connections>
-                <outlet property="negativeButton" destination="WEu-5x-XxU" id="qdl-E6-vCi"/>
-                <outlet property="positiveButton" destination="CgY-By-u19" id="Eus-vo-Qat"/>
-            </connections>
-            <point key="canvasLocation" x="-14" y="-227"/>
+            <point key="canvasLocation" x="28.5" y="-497"/>
         </view>
     </objects>
 </document>

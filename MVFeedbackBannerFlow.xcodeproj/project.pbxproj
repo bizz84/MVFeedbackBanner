@@ -16,7 +16,33 @@
 		65EB9B881D9C70E0008DC007 /* FeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EB9B871D9C70E0008DC007 /* FeedbackBanner.xib */; };
 		65EB9B8A1D9C711E008DC007 /* FeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B891D9C711E008DC007 /* FeedbackBanner.swift */; };
 		65EB9B8C1D9C74BC008DC007 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B8B1D9C74BC008DC007 /* RoundedButton.swift */; };
+		C3E8B4751D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */; };
+		C3E8B4761D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3E8B4771D9CFEE1007E6778 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65EB9B731D9C70AA008DC007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65EB9B7B1D9C70AA008DC007;
+			remoteInfo = MVFeedbackBannerFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3E8B4791D9CFEE1007E6778 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C3E8B4761D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVFeedbackBannerFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E8B4751D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,10 +143,12 @@
 				650BFBDB1D9C78F400146E4D /* Sources */,
 				650BFBDC1D9C78F400146E4D /* Frameworks */,
 				650BFBDD1D9C78F400146E4D /* Resources */,
+				C3E8B4791D9CFEE1007E6778 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C3E8B4781D9CFEE1007E6778 /* PBXTargetDependency */,
 			);
 			name = MVFeedbackBannerFlowDemo;
 			productName = MVFeedbackBannerFlowDemo;
@@ -226,6 +255,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C3E8B4781D9CFEE1007E6778 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */;
+			targetProxy = C3E8B4771D9CFEE1007E6778 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		650BFBE51D9C78F400146E4D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -249,6 +286,7 @@
 		650BFBEE1D9C78F400146E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVFeedbackBannerFlowDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -261,6 +299,7 @@
 		650BFBEF1D9C78F400146E4D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MVFeedbackBannerFlowDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -418,6 +457,7 @@
 				650BFBEF1D9C78F400146E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBannerFlow" */ = {
 			isa = XCConfigurationList;

@@ -8,24 +8,25 @@
 
 import UIKit
 
-enum RoundedButtonStyle: Int {
+public enum RoundedButtonStyle: Int {
     case fill
     case border
 }
 
 @IBDesignable
-class RoundedButton: UIButton {
+public class RoundedButton: UIButton {
     
-    @IBInspectable var buttonStyle: RoundedButtonStyle = .border {
+    @IBInspectable public var buttonStyle: RoundedButtonStyle = .border {
         didSet {
             switch buttonStyle {
             case .border:
-                self.layer.borderWidth = 1.0
+                self.layer.borderWidth = 2.0
                 self.layer.borderColor = UIColor.white.cgColor
                 self.backgroundColor = UIColor.clear
                 self.setTitleColor(UIColor.white, for: .normal)
             case .fill:
                 self.layer.borderWidth = 0.0
+                self.layer.borderColor = UIColor.clear.cgColor
                 self.backgroundColor = UIColor.white
                 self.setTitleColor(UIColor(red: 20.0/255.0, green: 160.0/255.0, blue: 1.0, alpha: 1.0), for: .normal)
             }
@@ -39,10 +40,5 @@ class RoundedButton: UIButton {
         get {
             return self.layer.cornerRadius
         }
-    }
-
-    open override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        
     }
 }

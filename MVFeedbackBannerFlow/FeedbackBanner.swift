@@ -8,12 +8,12 @@
 
 import UIKit
 
-class FeedbackBanner: UIView {
+public class FeedbackBanner: UIView {
 
     @IBOutlet var negativeButton: RoundedButton!
     @IBOutlet var positiveButton: RoundedButton!
     
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         negativeButton.buttonStyle = .border
         positiveButton.buttonStyle = .fill
     }
@@ -26,11 +26,15 @@ class FeedbackBanner: UIView {
         if let view = bundle.loadNibNamed("FeedbackBanner", owner: self, options: nil)?.first as? UIView {
             
             self.addSubview(view)
-            
-            view.topAnchor = self.topAnchor
-            view.leftAnchor = self.leftAnchor
-            view.rightAnchor = self.rightAnchor
-            view.bottomAnchor = self.bottomAnchor
+
+            if let superview = view.superview {
+                self.translatesAutoresizingMaskIntoConstraints = false
+                
+                view.topAnchor.constraint(equalTo: superview.topAnchor)
+                view.leftAnchor.constraint(equalTo: superview.leftAnchor)
+                view.rightAnchor.constraint(equalTo: superview.rightAnchor)
+                view.bottomAnchor.constraint(equalTo: superview.bottomAnchor)
+            }
         }
     }
     
