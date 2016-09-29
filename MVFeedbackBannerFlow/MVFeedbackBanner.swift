@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FeedbackBanner: UIViewNibLoadable {
+public class MVFeedbackBanner: UIViewNibLoadable {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var negativeButton: RoundedButton!
