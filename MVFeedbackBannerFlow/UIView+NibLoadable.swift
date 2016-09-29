@@ -20,12 +20,14 @@ extension NibLoadable where Self: UIView {
         
         let nibName = (String(describing: type(of: self)) as NSString).components(separatedBy: ".").last!
                 
-        if let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView {
-            
-            self.addSubview(view)
-            
-            view.anchorToSuperview()
+        guard let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView else {
+
+            print("Could not load nib with name: \(nibName)")
+            return
         }
+        self.addSubview(view)
+        
+        view.anchorToSuperview()
     }
 }
 
