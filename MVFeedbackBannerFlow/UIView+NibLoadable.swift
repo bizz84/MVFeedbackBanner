@@ -18,13 +18,28 @@ extension NibLoadable where Self: UIView {
         
         let bundle = Bundle(for: Self.self)
         
-        let nibName = "\(Self.self)"
-        
+        let nibName = (String(describing: type(of: self)) as NSString).components(separatedBy: ".").last!
+                
         if let view = bundle.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView {
             
             self.addSubview(view)
             
             view.anchorToSuperview()
         }
+    }
+}
+
+open class UIViewNibLoadable: UIView, NibLoadable {
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        loadFromNib()
+    }
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        loadFromNib()
     }
 }

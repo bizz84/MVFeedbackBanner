@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FeedbackBanner: UIView, NibLoadable {
+public class FeedbackBanner: UIViewNibLoadable {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var negativeButton: RoundedButton!
@@ -17,12 +17,6 @@ public class FeedbackBanner: UIView, NibLoadable {
     override public func awakeFromNib() {
         negativeButton.buttonStyle = .border
         positiveButton.buttonStyle = .fill
-    }
- 
-    required public init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-
-        loadFromNib()
     }
     
     public var title: String = NSLocalizedString("BannerTitle", comment: "") {
