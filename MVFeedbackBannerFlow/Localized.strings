@@ -1,0 +1,11 @@
+/* 
+  Localized.strings
+  MVFeedbackBannerFlow
+
+  Created by Andrea Bizzotto on 29/09/2016.
+  Copyright © 2016 musevisions. All rights reserved.
+*/
+
+"BannerTitle" = "Are you enjoying this app?";
+"BannerNegativeText" = "No, not really";
+"BannerPositiveText" = "Yes!";

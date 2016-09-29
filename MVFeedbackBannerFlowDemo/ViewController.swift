@@ -18,7 +18,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
+        feedbackBanner.title = "Yo there, are you enjoying this amazing app?"
+        feedbackBanner.negativeText = "Not really"
+        feedbackBanner.positiveText = "Yeah!"
     }
 
 }

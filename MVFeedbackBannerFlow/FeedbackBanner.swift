@@ -10,6 +10,7 @@ import UIKit
 
 public class FeedbackBanner: UIView {
 
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var negativeButton: RoundedButton!
     @IBOutlet var positiveButton: RoundedButton!
     
@@ -28,6 +29,22 @@ public class FeedbackBanner: UIView {
             self.addSubview(view)
             
             view.anchorToSuperview()
+        }
+    }
+    
+    public var title: String = NSLocalizedString("BannerTitle", comment: "") {
+        didSet {
+            titleLabel.text = title
+        }
+    }
+    public var negativeText: String = NSLocalizedString("BannerNegativeText", comment: "") {
+        didSet {
+            negativeButton.setTitle(negativeText, for: .normal)
+        }
+    }
+    public var positiveText: String = NSLocalizedString("BannerPositiveText", comment: "") {
+        didSet {
+            positiveButton.setTitle(positiveText, for: .normal)
         }
     }
 }
