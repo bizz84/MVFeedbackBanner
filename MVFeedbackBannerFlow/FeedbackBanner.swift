@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class FeedbackBanner: UIView {
+public class FeedbackBanner: UIView, NibLoadable {
 
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var negativeButton: RoundedButton!
@@ -22,14 +22,7 @@ public class FeedbackBanner: UIView {
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
 
-        let bundle = Bundle(for: FeedbackBanner.self)
-        
-        if let view = bundle.loadNibNamed("FeedbackBanner", owner: self, options: nil)?.first as? UIView {
-            
-            self.addSubview(view)
-            
-            view.anchorToSuperview()
-        }
+        loadFromNib()
     }
     
     public var title: String = NSLocalizedString("BannerTitle", comment: "") {
@@ -48,3 +41,4 @@ public class FeedbackBanner: UIView {
         }
     }
 }
+

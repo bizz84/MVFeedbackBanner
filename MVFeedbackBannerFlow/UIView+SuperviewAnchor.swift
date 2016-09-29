@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    func anchorToSuperview() {
+    public func anchorToSuperview() {
         
         if let superview = self.superview {
             self.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +23,7 @@ extension UIView {
                 ])
         }
     }
-    func makeEqualityConstraint(attribute: NSLayoutAttribute, toView view: UIView) -> NSLayoutConstraint {
+    public func makeEqualityConstraint(attribute: NSLayoutAttribute, toView view: UIView) -> NSLayoutConstraint {
         
         return NSLayoutConstraint(item: self, attribute: attribute, relatedBy: .equal,
                                   toItem: view, attribute: attribute, multiplier: 1, constant: 0)
