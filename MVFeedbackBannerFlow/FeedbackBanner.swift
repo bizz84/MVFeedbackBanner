@@ -26,16 +26,8 @@ public class FeedbackBanner: UIView {
         if let view = bundle.loadNibNamed("FeedbackBanner", owner: self, options: nil)?.first as? UIView {
             
             self.addSubview(view)
-
-            if let superview = view.superview {
-                self.translatesAutoresizingMaskIntoConstraints = false
-                
-                view.topAnchor.constraint(equalTo: superview.topAnchor)
-                view.leftAnchor.constraint(equalTo: superview.leftAnchor)
-                view.rightAnchor.constraint(equalTo: superview.rightAnchor)
-                view.bottomAnchor.constraint(equalTo: superview.bottomAnchor)
-            }
+            
+            view.anchorToSuperview()
         }
     }
-    
 }
