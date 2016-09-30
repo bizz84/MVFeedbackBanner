@@ -25,9 +25,10 @@ extension NibLoadable where Self: UIView {
             print("Could not load nib with name: \(nibName)")
             return
         }
+        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        view.frame = bounds
+
         self.addSubview(view)
-        
-        view.anchorToSuperview()
     }
 }
 
@@ -43,5 +44,9 @@ open class UIViewNibLoadable: UIView, NibLoadable {
         super.init(frame: frame)
         
         loadFromNib()
+    }
+    
+    public convenience init() {
+        self.init(frame: .zero)
     }
 }

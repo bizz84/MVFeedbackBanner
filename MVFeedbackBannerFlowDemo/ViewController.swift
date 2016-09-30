@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let banner = MVFeedbackBanner(frame: .zero)
+        let banner = MVFeedbackBanner()
         
         print("subview: \(banner.subviews)")
         
