@@ -15,6 +15,7 @@
 		650BFBF41D9DBA1F00146E4D /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 650BFBF31D9DBA1F00146E4D /* Localized.strings */; };
 		650BFBF81D9DC80A00146E4D /* UIView+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650BFBF71D9DC80A00146E4D /* UIView+NibLoadable.swift */; };
 		65E229FE1D9FCB2000127FB9 /* MVFeedbackBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E229FD1D9FCB2000127FB9 /* MVFeedbackBannerController.swift */; };
+		65E22A001DA0299C00127FB9 /* MVFeedbackBannerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E229FF1DA0299C00127FB9 /* MVFeedbackBannerConfigurator.swift */; };
 		65EB9B811D9C70AB008DC007 /* MVFeedbackBannerFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65EB9B881D9C70E0008DC007 /* MVFeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EB9B871D9C70E0008DC007 /* MVFeedbackBanner.xib */; };
 		65EB9B8A1D9C711E008DC007 /* MVFeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B891D9C711E008DC007 /* MVFeedbackBanner.swift */; };
@@ -58,6 +59,7 @@
 		650BFBF31D9DBA1F00146E4D /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
 		650BFBF71D9DC80A00146E4D /* UIView+NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadable.swift"; sourceTree = "<group>"; };
 		65E229FD1D9FCB2000127FB9 /* MVFeedbackBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerController.swift; sourceTree = "<group>"; };
+		65E229FF1DA0299C00127FB9 /* MVFeedbackBannerConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerConfigurator.swift; sourceTree = "<group>"; };
 		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBannerFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVFeedbackBannerFlow.h; sourceTree = "<group>"; };
 		65EB9B801D9C70AB008DC007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				650BFBE11D9C78F400146E4D /* AppDelegate.swift */,
 				650BFBE31D9C78F400146E4D /* ViewController.swift */,
+				65E229FF1DA0299C00127FB9 /* MVFeedbackBannerConfigurator.swift */,
 				650BFBE51D9C78F400146E4D /* Main.storyboard */,
 				650BFBE81D9C78F400146E4D /* Assets.xcassets */,
 				650BFBEA1D9C78F400146E4D /* LaunchScreen.storyboard */,
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E22A001DA0299C00127FB9 /* MVFeedbackBannerConfigurator.swift in Sources */,
 				650BFBE41D9C78F400146E4D /* ViewController.swift in Sources */,
 				650BFBE21D9C78F400146E4D /* AppDelegate.swift in Sources */,
 			);
