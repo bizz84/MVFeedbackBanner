@@ -14,8 +14,7 @@ Small banner to ask the user to provide feedback or rate the app.
 
 ### Preview
 
-
-
+<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/Screenshots/preview.png" width="320">
 
 ## License
 
