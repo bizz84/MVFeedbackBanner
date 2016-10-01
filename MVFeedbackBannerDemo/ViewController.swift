@@ -53,9 +53,11 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
 
         switch status {
         case .negativeDismiss: break
-        case .negativeAction: break
+        case .negativeAction:
+            self.present(makeAlertController(title: "Great!", message: "Opens Feedback form / email"), animated: true, completion: nil)
         case .positiveDismiss: break
-        case .positiveAction: break
+        case .positiveAction:
+            self.present(makeAlertController(title: "Great!", message: "Opens App Store"), animated: true, completion: nil)
         }
 
         if banner == topFeedbackBanner {
@@ -84,6 +86,12 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
         if !hidden {
             bottomBannerController.reset()
         }
+    }
+    
+    func makeAlertController(title: String, message: String) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        return alert
     }
 
 

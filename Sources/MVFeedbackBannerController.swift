@@ -97,7 +97,7 @@ public protocol MVFeedbackBannerControllerDelegate: class {
         case .chosenNegative:
             delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .negativeDismiss)
         case .chosenPositive:
-            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .negativeAction)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .positiveDismiss)
         }
     }
     @objc private func positiveButtonPressed() {
@@ -106,7 +106,7 @@ public protocol MVFeedbackBannerControllerDelegate: class {
             state = .chosenPositive
             self.updateBanner(attributes: self.positiveAttributes, animated: true)
         case .chosenNegative:
-            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .positiveDismiss)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .negativeAction)
         case .chosenPositive:
             delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .positiveAction)
         }
