@@ -16,15 +16,37 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        showTopBanner()
+        
+        if let ncView = self.navigationController?.view {
+            showBottomBanner(attachTo: ncView)
+        }
+    }
+    
+    func showTopBanner() {
+        
+        feedbackBanner.title = "Interface builder banner"
+        feedbackBanner.negativeText = "Not really"
+        feedbackBanner.positiveText = "Yeah!"
+    }
+    
+    func showBottomBanner(attachTo view: UIView) {
         
         let banner = MVFeedbackBanner()
         
-        print("subview: \(banner.subviews)")
+        view.addSubview(banner)
         
-        feedbackBanner.title = "Yo there, are you enjoying this amazing app?"
-        feedbackBanner.negativeText = "Not really"
-        feedbackBanner.positiveText = "Yeah!"
-        
+        let constraints = [
+            banner.leftAnchor.constraint(equalTo: view.leftAnchor),
+            banner.rightAnchor.constraint(equalTo: view.rightAnchor),
+            banner.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ]
+        view.addConstraints(constraints)
+
+        banner.title = "Programmatic banner"
+        banner.negativeText = "Not really"
+        banner.positiveText = "Yeah!"
     }
 }
 

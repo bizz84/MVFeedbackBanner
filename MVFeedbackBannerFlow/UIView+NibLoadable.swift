@@ -8,11 +8,11 @@
 
 import UIKit
 
-protocol NibLoadable {
+public protocol NibLoadable {
     func loadFromNib()
 }
 
-extension NibLoadable where Self: UIView {
+public extension NibLoadable where Self: UIView {
     
     func loadFromNib() {
         
@@ -29,6 +29,8 @@ extension NibLoadable where Self: UIView {
         view.frame = bounds
 
         self.addSubview(view)
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
     }
 }
 
@@ -44,6 +46,8 @@ open class UIViewNibLoadable: UIView, NibLoadable {
         super.init(frame: frame)
         
         loadFromNib()
+        
+        awakeFromNib()
     }
     
     public convenience init() {
