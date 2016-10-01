@@ -1,6 +1,6 @@
 //
 //  UIView+NibLoadable.swift
-//  MVFeedbackBannerFlow
+//  MVFeedbackBanner
 //
 //  Created by Andrea Bizzotto on 29/09/2016.
 //  Copyright © 2016 musevisions. All rights reserved.

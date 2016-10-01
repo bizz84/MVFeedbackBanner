@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MVFeedbackBannerFlowDemo
+//  MVFeedbackBannerDemo
 //
 //  Created by Andrea Bizzotto on 28/09/2016.
 //  Copyright © 2016 musevisions. All rights reserved.
