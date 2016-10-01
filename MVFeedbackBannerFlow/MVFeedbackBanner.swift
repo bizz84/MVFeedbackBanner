@@ -19,6 +19,13 @@ import UIKit
         positiveButton.buttonStyle = .fill
     }
     
+    public override var backgroundColor: UIColor? {
+        didSet {
+            self.subviews.first?.backgroundColor = backgroundColor
+            positiveButton?.setTitleColor(backgroundColor, for: .normal)
+        }
+    }
+    
     public var title: String = NSLocalizedString("BannerTitle", comment: "") {
         didSet {
             titleLabel.text = title
