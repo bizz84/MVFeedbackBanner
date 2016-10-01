@@ -33,12 +33,18 @@ import UIKit
     }
     public var negativeText: String = NSLocalizedString("BannerNegativeText", comment: "") {
         didSet {
-            negativeButton.setTitle(negativeText, for: .normal)
+            UIView.performWithoutAnimation {
+                self.negativeButton.setTitle(negativeText, for: .normal)
+                self.negativeButton.layoutIfNeeded()
+            }
         }
     }
     public var positiveText: String = NSLocalizedString("BannerPositiveText", comment: "") {
         didSet {
-            positiveButton.setTitle(positiveText, for: .normal)
+            UIView.performWithoutAnimation {
+                self.positiveButton.setTitle(positiveText, for: .normal)
+                self.positiveButton.layoutIfNeeded()
+            }
         }
     }
 }
