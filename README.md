@@ -1,6 +1,6 @@
 # MVFeedbackBanner
 
-Small banner to ask the user to provide feedback or rate the app.
+Ask the user to rate your app or provide feedback with a simple customisable banner.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org)
@@ -12,9 +12,35 @@ Small banner to ask the user to provide feedback or rate the app.
            )](https://github.com/bizz84/MVFeedbackBanner/issues)
 [![Cocoapod](http://img.shields.io/cocoapods/v/MVFeedbackBanner.svg?style=flat)](http://cocoadocs.org/docsets/MVFeedbackBanner/)
 
-### Preview
+## Preview
 
 <img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/preview.png" width="320">
+
+**MVFeedbackBanner** is a plug and play component that can be used to easily integrate a simple flow to ask the user for feedback or to rate the app.
+
+It has been inspired by [this Medium story](https://medium.com/budi-brain/designing-in-app-survey-6163304e88dd#.kata5zlku) about designing an in-app survey.
+
+## Features
+
+* Super easy integration with **Interface Builder** or **programmatically**.
+* **IBDesignable** support
+* Customisable texts and background colors
+
+## Screen flows
+
+An out of the box controller is provided with two possible flows:
+
+**Are you enjoying this app?**
+
+* **Yes**: Great! Let other know what you think of this app
+	* **No thanks**: Dismiss
+	* **Rate App**: Open App Store page
+* **No**: Could you tell me what happened?
+	* **No**: Dismiss
+	* **Yes**: Open feedback form / email
+
+## Installation
+
 
 ## License
 
