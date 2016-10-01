@@ -15,7 +15,7 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
 
     @IBOutlet private var feedbackBanner: MVFeedbackBanner!
     
-    var bannerConfigurator: MVFeedbackBannerPresenter!
+    var bannerPresenter: MVFeedbackBannerPresenter!
     
     var bottomFeedbackBanner: MVFeedbackBanner!
 
@@ -30,11 +30,11 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
             return
         }
         
-        bannerConfigurator = MVFeedbackBannerPresenter(parentView: navigationControllerView, delegate: self)
+        bannerPresenter = MVFeedbackBannerPresenter(parentView: navigationControllerView, delegate: self)
         
-        bottomFeedbackBanner = bannerConfigurator.banner
+        bottomFeedbackBanner = bannerPresenter.banner
         
-        bannerController = bannerConfigurator.bannerController
+        bannerController = bannerPresenter.bannerController
     }
     
     
@@ -54,13 +54,13 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
         case .positiveAction: break
         }
         
-        bannerConfigurator.setBannerHidden(true, animated: true)
+        bannerPresenter.setBannerHidden(true, animated: true)
     }
     
     @IBAction func resetButtonPressed(sender: UIButton) {
         
         bannerController.reset()
-        bannerConfigurator.setBannerHidden(false, animated: true)
+        bannerPresenter.setBannerHidden(false, animated: true)
     }
 
 }
