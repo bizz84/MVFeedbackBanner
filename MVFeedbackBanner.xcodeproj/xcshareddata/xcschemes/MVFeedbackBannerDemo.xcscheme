@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "650BFBDE1D9C78F400146E4D"
-               BuildableName = "MVFeedbackBannerFlowDemo.app"
-               BlueprintName = "MVFeedbackBannerFlowDemo"
-               ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+               BuildableName = "MVFeedbackBannerDemo.app"
+               BlueprintName = "MVFeedbackBannerDemo"
+               ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "650BFBDE1D9C78F400146E4D"
-            BuildableName = "MVFeedbackBannerFlowDemo.app"
-            BlueprintName = "MVFeedbackBannerFlowDemo"
-            ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+            BuildableName = "MVFeedbackBannerDemo.app"
+            BlueprintName = "MVFeedbackBannerDemo"
+            ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "650BFBDE1D9C78F400146E4D"
-            BuildableName = "MVFeedbackBannerFlowDemo.app"
-            BlueprintName = "MVFeedbackBannerFlowDemo"
-            ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+            BuildableName = "MVFeedbackBannerDemo.app"
+            BlueprintName = "MVFeedbackBannerDemo"
+            ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "650BFBDE1D9C78F400146E4D"
-            BuildableName = "MVFeedbackBannerFlowDemo.app"
-            BlueprintName = "MVFeedbackBannerFlowDemo"
-            ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+            BuildableName = "MVFeedbackBannerDemo.app"
+            BlueprintName = "MVFeedbackBannerDemo"
+            ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

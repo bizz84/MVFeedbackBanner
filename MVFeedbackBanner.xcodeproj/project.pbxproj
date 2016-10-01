@@ -20,8 +20,8 @@
 		65EB9B881D9C70E0008DC007 /* MVFeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EB9B871D9C70E0008DC007 /* MVFeedbackBanner.xib */; };
 		65EB9B8A1D9C711E008DC007 /* MVFeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B891D9C711E008DC007 /* MVFeedbackBanner.swift */; };
 		65EB9B8C1D9C74BC008DC007 /* MVRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EB9B8B1D9C74BC008DC007 /* MVRoundedButton.swift */; };
-		C3E8B4751D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */; };
-		C3E8B4761D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3E8B4751D9CFEE1007E6778 /* MVFeedbackBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */; };
+		C3E8B4761D9CFEE1007E6778 /* MVFeedbackBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C3E8B4761D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Embed Frameworks */,
+				C3E8B4761D9CFEE1007E6778 /* MVFeedbackBanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,7 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVFeedbackBannerFlowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		650BFBDF1D9C78F400146E4D /* MVFeedbackBannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVFeedbackBannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		650BFBE11D9C78F400146E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		650BFBE31D9C78F400146E4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		650BFBE61D9C78F400146E4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		650BFBF71D9DC80A00146E4D /* UIView+NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+NibLoadable.swift"; sourceTree = "<group>"; };
 		65E229FD1D9FCB2000127FB9 /* MVFeedbackBannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerController.swift; sourceTree = "<group>"; };
 		65E229FF1DA0299C00127FB9 /* MVFeedbackBannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerPresenter.swift; sourceTree = "<group>"; };
-		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBannerFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65EB9B7F1D9C70AB008DC007 /* MVFeedbackBannerFlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVFeedbackBannerFlow.h; sourceTree = "<group>"; };
 		65EB9B801D9C70AB008DC007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65EB9B871D9C70E0008DC007 /* MVFeedbackBanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVFeedbackBanner.xib; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3E8B4751D9CFEE1007E6778 /* MVFeedbackBannerFlow.framework in Frameworks */,
+				C3E8B4751D9CFEE1007E6778 /* MVFeedbackBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,8 +113,8 @@
 		65EB9B7D1D9C70AB008DC007 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */,
-				650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */,
+				65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */,
+				650BFBDF1D9C78F400146E4D /* MVFeedbackBannerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		650BFBDE1D9C78F400146E4D /* MVFeedbackBannerFlowDemo */ = {
+		650BFBDE1D9C78F400146E4D /* MVFeedbackBannerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlowDemo" */;
+			buildConfigurationList = 650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerDemo" */;
 			buildPhases = (
 				650BFBDB1D9C78F400146E4D /* Sources */,
 				650BFBDC1D9C78F400146E4D /* Frameworks */,
@@ -162,14 +162,14 @@
 			dependencies = (
 				C3E8B4781D9CFEE1007E6778 /* PBXTargetDependency */,
 			);
-			name = MVFeedbackBannerFlowDemo;
+			name = MVFeedbackBannerDemo;
 			productName = MVFeedbackBannerFlowDemo;
-			productReference = 650BFBDF1D9C78F400146E4D /* MVFeedbackBannerFlowDemo.app */;
+			productReference = 650BFBDF1D9C78F400146E4D /* MVFeedbackBannerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */ = {
+		65EB9B7B1D9C70AA008DC007 /* MVFeedbackBanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 65EB9B841D9C70AB008DC007 /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlow" */;
+			buildConfigurationList = 65EB9B841D9C70AB008DC007 /* Build configuration list for PBXNativeTarget "MVFeedbackBanner" */;
 			buildPhases = (
 				65EB9B771D9C70AA008DC007 /* Sources */,
 				65EB9B781D9C70AA008DC007 /* Frameworks */,
@@ -180,9 +180,9 @@
 			);
 			dependencies = (
 			);
-			name = MVFeedbackBannerFlow;
+			name = MVFeedbackBanner;
 			productName = MVFeedbackBannerFlow;
-			productReference = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBannerFlow.framework */;
+			productReference = 65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBannerFlow" */;
+			buildConfigurationList = 65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBanner" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -219,8 +219,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */,
-				650BFBDE1D9C78F400146E4D /* MVFeedbackBannerFlowDemo */,
+				65EB9B7B1D9C70AA008DC007 /* MVFeedbackBanner */,
+				650BFBDE1D9C78F400146E4D /* MVFeedbackBannerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -274,7 +274,7 @@
 /* Begin PBXTargetDependency section */
 		C3E8B4781D9CFEE1007E6778 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 65EB9B7B1D9C70AA008DC007 /* MVFeedbackBannerFlow */;
+			target = 65EB9B7B1D9C70AA008DC007 /* MVFeedbackBanner */;
 			targetProxy = C3E8B4771D9CFEE1007E6778 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,7 +436,7 @@
 				INFOPLIST_FILE = MVFeedbackBannerFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBannerFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -456,7 +456,7 @@
 				INFOPLIST_FILE = MVFeedbackBannerFlow/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBannerFlow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.musevisions.iOS.MVFeedbackBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -466,7 +466,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlowDemo" */ = {
+		650BFBF01D9C78F400146E4D /* Build configuration list for PBXNativeTarget "MVFeedbackBannerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				650BFBEE1D9C78F400146E4D /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBannerFlow" */ = {
+		65EB9B761D9C70AA008DC007 /* Build configuration list for PBXProject "MVFeedbackBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65EB9B821D9C70AB008DC007 /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		65EB9B841D9C70AB008DC007 /* Build configuration list for PBXNativeTarget "MVFeedbackBannerFlow" */ = {
+		65EB9B841D9C70AB008DC007 /* Build configuration list for PBXNativeTarget "MVFeedbackBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65EB9B851D9C70AB008DC007 /* Debug */,

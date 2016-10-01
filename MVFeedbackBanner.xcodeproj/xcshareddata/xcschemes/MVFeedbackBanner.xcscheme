@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "65EB9B7B1D9C70AA008DC007"
-               BuildableName = "MVFeedbackBannerFlow.framework"
-               BlueprintName = "MVFeedbackBannerFlow"
-               ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+               BuildableName = "MVFeedbackBanner.framework"
+               BlueprintName = "MVFeedbackBanner"
+               ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65EB9B7B1D9C70AA008DC007"
-            BuildableName = "MVFeedbackBannerFlow.framework"
-            BlueprintName = "MVFeedbackBannerFlow"
-            ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+            BuildableName = "MVFeedbackBanner.framework"
+            BlueprintName = "MVFeedbackBanner"
+            ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "65EB9B7B1D9C70AA008DC007"
-            BuildableName = "MVFeedbackBannerFlow.framework"
-            BlueprintName = "MVFeedbackBannerFlow"
-            ReferencedContainer = "container:MVFeedbackBannerFlow.xcodeproj">
+            BuildableName = "MVFeedbackBanner.framework"
+            BlueprintName = "MVFeedbackBanner"
+            ReferencedContainer = "container:MVFeedbackBanner.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
