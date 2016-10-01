@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652AEB381DA0706B004F5DFE /* MVFeedbackBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AEB371DA0706B004F5DFE /* MVFeedbackBannerPresenter.swift */; };
+		652AEB3A1DA070CC004F5DFE /* MVFeedbackBannerPresenterFadeIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652AEB391DA070CC004F5DFE /* MVFeedbackBannerPresenterFadeIn.swift */; };
 		65E22A0B1DA0692600127FB9 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65E22A031DA0692600127FB9 /* Localized.strings */; };
 		65E22A0C1DA0692600127FB9 /* MVFeedbackBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A041DA0692600127FB9 /* MVFeedbackBanner.swift */; };
 		65E22A0D1DA0692600127FB9 /* MVFeedbackBanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65E22A051DA0692600127FB9 /* MVFeedbackBanner.xib */; };
@@ -16,7 +18,7 @@
 		65E22A111DA0692600127FB9 /* UIView+NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A091DA0692600127FB9 /* UIView+NibLoadable.swift */; };
 		65E22A1C1DA06B5600127FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A131DA06B5600127FB9 /* AppDelegate.swift */; };
 		65E22A1D1DA06B5600127FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E22A141DA06B5600127FB9 /* Assets.xcassets */; };
-		65E22A211DA06B5600127FB9 /* MVFeedbackBannerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenter.swift */; };
+		65E22A211DA06B5600127FB9 /* MVFeedbackBannerPresenterSlideFromBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenterSlideFromBottom.swift */; };
 		65E22A221DA06B5600127FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E22A1B1DA06B5600127FB9 /* ViewController.swift */; };
 		65E22A231DA06B8200127FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E22A171DA06B5600127FB9 /* Main.storyboard */; };
 		65E22A241DA06B8600127FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E22A151DA06B5600127FB9 /* LaunchScreen.storyboard */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		650BFBDF1D9C78F400146E4D /* MVFeedbackBannerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVFeedbackBannerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		652AEB371DA0706B004F5DFE /* MVFeedbackBannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerPresenter.swift; sourceTree = "<group>"; };
+		652AEB391DA070CC004F5DFE /* MVFeedbackBannerPresenterFadeIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerPresenterFadeIn.swift; sourceTree = "<group>"; };
 		65E22A021DA0692600127FB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65E22A031DA0692600127FB9 /* Localized.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localized.strings; sourceTree = "<group>"; };
 		65E22A041DA0692600127FB9 /* MVFeedbackBanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBanner.swift; sourceTree = "<group>"; };
@@ -63,7 +67,7 @@
 		65E22A161DA06B5600127FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E22A181DA06B5600127FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E22A191DA06B5600127FB9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerPresenter.swift; sourceTree = "<group>"; };
+		65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenterSlideFromBottom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVFeedbackBannerPresenterSlideFromBottom.swift; sourceTree = "<group>"; };
 		65E22A1B1DA06B5600127FB9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		65EB9B7C1D9C70AB008DC007 /* MVFeedbackBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVFeedbackBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +98,7 @@
 				65E22A041DA0692600127FB9 /* MVFeedbackBanner.swift */,
 				65E22A081DA0692600127FB9 /* MVRoundedButton.swift */,
 				65E22A061DA0692600127FB9 /* MVFeedbackBannerController.swift */,
+				652AEB371DA0706B004F5DFE /* MVFeedbackBannerPresenter.swift */,
 				65E22A091DA0692600127FB9 /* UIView+NibLoadable.swift */,
 				65E22A071DA0692600127FB9 /* MVFeedbackBanner.h */,
 				65E22A021DA0692600127FB9 /* Info.plist */,
@@ -107,7 +112,8 @@
 			children = (
 				65E22A131DA06B5600127FB9 /* AppDelegate.swift */,
 				65E22A1B1DA06B5600127FB9 /* ViewController.swift */,
-				65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenter.swift */,
+				65E22A1A1DA06B5600127FB9 /* MVFeedbackBannerPresenterSlideFromBottom.swift */,
+				652AEB391DA070CC004F5DFE /* MVFeedbackBannerPresenterFadeIn.swift */,
 				65E22A141DA06B5600127FB9 /* Assets.xcassets */,
 				65E22A151DA06B5600127FB9 /* LaunchScreen.storyboard */,
 				65E22A171DA06B5600127FB9 /* Main.storyboard */,
@@ -253,8 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E22A221DA06B5600127FB9 /* ViewController.swift in Sources */,
+				652AEB3A1DA070CC004F5DFE /* MVFeedbackBannerPresenterFadeIn.swift in Sources */,
 				65E22A1C1DA06B5600127FB9 /* AppDelegate.swift in Sources */,
-				65E22A211DA06B5600127FB9 /* MVFeedbackBannerPresenter.swift in Sources */,
+				65E22A211DA06B5600127FB9 /* MVFeedbackBannerPresenterSlideFromBottom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +272,7 @@
 				65E22A111DA0692600127FB9 /* UIView+NibLoadable.swift in Sources */,
 				65E22A0E1DA0692600127FB9 /* MVFeedbackBannerController.swift in Sources */,
 				65E22A0C1DA0692600127FB9 /* MVFeedbackBanner.swift in Sources */,
+				652AEB381DA0706B004F5DFE /* MVFeedbackBannerPresenter.swift in Sources */,
 				65E22A101DA0692600127FB9 /* MVRoundedButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
