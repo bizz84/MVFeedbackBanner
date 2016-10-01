@@ -20,12 +20,16 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
     
     var topBannerPresenter: MVFeedbackBannerPresenter!
     
+    @IBOutlet var topSwitch: UISwitch!
+    
     // Bottom banner
     var bottomFeedbackBanner: MVFeedbackBanner!
 
     var bottomBannerController: MVFeedbackBannerController!
     
     var bottomBannerPresenter: MVFeedbackBannerPresenter!
+
+    @IBOutlet var bottomSwitch: UISwitch!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,18 +59,33 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
         }
 
         if banner == topFeedbackBanner {
+            topSwitch.isOn = false
             topBannerPresenter.setBannerHidden(true, animated: true)
         }
         else {
+            bottomSwitch.isOn = false
             bottomBannerPresenter.setBannerHidden(true, animated: true)
         }
     }
     
-    @IBAction func resetButtonPressed(sender: UIButton) {
+    @IBAction func topSwitchValueChanged(sender: UISwitch) {
         
-        bottomBannerController.reset()
-        bottomBannerPresenter.setBannerHidden(false, animated: true)
+        let hidden = !sender.isOn
+        topBannerPresenter.setBannerHidden(hidden, animated: true)
+        if !hidden {
+            topBannerController.reset()
+        }
     }
+
+    @IBAction func bottomSwitchValueChanged(sender: UISwitch) {
+        
+        let hidden = !sender.isOn
+        bottomBannerPresenter.setBannerHidden(hidden, animated: true)
+        if !hidden {
+            bottomBannerController.reset()
+        }
+    }
+
 
     func createBannerController(banner: MVFeedbackBanner, delegate: MVFeedbackBannerControllerDelegate) -> MVFeedbackBannerController {
         

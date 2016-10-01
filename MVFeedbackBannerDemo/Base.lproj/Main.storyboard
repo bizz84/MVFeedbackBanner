@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Feedback form-->
+        <!--Banners-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MVFeedbackBannerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Banners" customClass="ViewController" customModule="MVFeedbackBannerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,56 +24,58 @@
                                     <constraint firstAttribute="height" constant="114" placeholder="YES" id="UWu-gY-Wrr"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-IA-aBO">
-                                <state key="normal" title="Push"/>
-                                <connections>
-                                    <segue destination="BfG-sD-rR8" kind="show" id="Hca-9G-MtS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-uv-K9y">
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="resetButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO1-dg-uNa"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CVx-QY-2PD">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9wk-ic-o3Y">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show top banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pF4-vU-sLm">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Tt-f7-gpa">
+                                                <connections>
+                                                    <action selector="topSwitchValueChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="qdm-OW-wc0"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y8z-Ma-neo">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show bottom banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvN-kV-PDs">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7yb-fu-YGu">
+                                                <connections>
+                                                    <action selector="bottomSwitchValueChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="0ea-xk-YM2"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="wHS-OY-fSS" secondAttribute="trailing" id="7EK-8e-woX"/>
-                            <constraint firstItem="7Nx-uv-K9y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CVX-yy-Krk"/>
-                            <constraint firstItem="7Nx-uv-K9y" firstAttribute="top" secondItem="EYo-IA-aBO" secondAttribute="bottom" constant="24.5" id="Kcr-Dm-Xw9"/>
-                            <constraint firstItem="EYo-IA-aBO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ShA-ar-RHP"/>
                             <constraint firstItem="wHS-OY-fSS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Zcb-bs-CR4"/>
-                            <constraint firstItem="EYo-IA-aBO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="arx-1E-R7B"/>
+                            <constraint firstItem="CVx-QY-2PD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cSb-Pb-251"/>
+                            <constraint firstItem="CVx-QY-2PD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cfV-NW-Eqb"/>
                             <constraint firstItem="wHS-OY-fSS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oFi-iX-bKm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Feedback form" id="dDE-Y8-YEx"/>
+                    <navigationItem key="navigationItem" title="Banners" id="dDE-Y8-YEx"/>
                     <connections>
+                        <outlet property="bottomSwitch" destination="7yb-fu-YGu" id="aLv-xF-e66"/>
                         <outlet property="topFeedbackBanner" destination="wHS-OY-fSS" id="KiI-Mq-ggI"/>
+                        <outlet property="topSwitch" destination="7Tt-f7-gpa" id="2yr-dO-ZBm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040.8" y="791.15442278860576"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iZS-bD-CZG">
-            <objects>
-                <viewController id="BfG-sD-rR8" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A9c-qB-8XX"/>
-                        <viewControllerLayoutGuide type="bottom" id="S9B-87-Lva"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="XXi-Su-JOZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xp8-Ol-U9R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1870" y="791"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ga0-eX-Urb">
