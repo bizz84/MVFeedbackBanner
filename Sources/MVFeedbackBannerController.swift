@@ -29,7 +29,7 @@ public enum MVFeedbackBannerExitStatus {
 }
 
 public protocol MVFeedbackBannerControllerDelegate: class {
-    func feedbackBannerRequestedExit(status: MVFeedbackBannerExitStatus)
+    func feedbackBanner(_ banner: MVFeedbackBanner, requestedExitWithStatus status: MVFeedbackBannerExitStatus)
 }
 
 @objc public class MVFeedbackBannerController: NSObject {
@@ -95,9 +95,9 @@ public protocol MVFeedbackBannerControllerDelegate: class {
             state = .chosenNegative
             self.updateBanner(attributes: self.negativeAttributes, animated: true)
         case .chosenNegative:
-            delegate.feedbackBannerRequestedExit(status: .negativeDismiss)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .negativeDismiss)
         case .chosenPositive:
-            delegate.feedbackBannerRequestedExit(status: .negativeAction)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .negativeAction)
         }
     }
     @objc private func positiveButtonPressed() {
@@ -106,9 +106,9 @@ public protocol MVFeedbackBannerControllerDelegate: class {
             state = .chosenPositive
             self.updateBanner(attributes: self.positiveAttributes, animated: true)
         case .chosenNegative:
-            delegate.feedbackBannerRequestedExit(status: .positiveDismiss)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .positiveDismiss)
         case .chosenPositive:
-            delegate.feedbackBannerRequestedExit(status: .positiveAction)
+            delegate.feedbackBanner(feedbackBanner, requestedExitWithStatus: .positiveAction)
         }
     }
 }

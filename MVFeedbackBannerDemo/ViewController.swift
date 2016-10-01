@@ -13,54 +13,59 @@ import MVFeedbackBanner
 
 class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
 
-    @IBOutlet private var feedbackBanner: MVFeedbackBanner!
+    // Top banner
+    @IBOutlet var topFeedbackBanner: MVFeedbackBanner!
     
-    var bannerPresenter: MVFeedbackBannerPresenter!
+    var topBannerController: MVFeedbackBannerController!
     
+    var topBannerPresenter: MVFeedbackBannerPresenter!
+    
+    // Bottom banner
     var bottomFeedbackBanner: MVFeedbackBanner!
 
-    var bannerController: MVFeedbackBannerController!
+    var bottomBannerController: MVFeedbackBannerController!
     
+    var bottomBannerPresenter: MVFeedbackBannerPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        showTopBanner()
+        // Top
+        topBannerController = createBannerController(banner: topFeedbackBanner, delegate: self)
         
-        guard let navigationControllerView = self.navigationController?.view else {
-            return
-        }
-
+        topBannerPresenter = MVFeedbackBannerPresenterFadeIn(parentView: self.view, banner: topFeedbackBanner)
+        
+        // Bottom
         bottomFeedbackBanner = MVFeedbackBanner()
 
-        bannerController = createBannerController(banner: bottomFeedbackBanner, delegate: self)
+        bottomBannerController = createBannerController(banner: bottomFeedbackBanner, delegate: self)
 
-        bannerPresenter = MVFeedbackBannerPresenterSlideFromBottom(parentView: navigationControllerView, banner: bottomFeedbackBanner)
+        bottomBannerPresenter = MVFeedbackBannerPresenterSlideFromBottom(parentView: self.view, banner: bottomFeedbackBanner)
     }
     
     
-    func showTopBanner() {
-        
-        feedbackBanner.title = "Interface builder banner"
-        feedbackBanner.negativeText = "Not really"
-        feedbackBanner.positiveText = "Yeah!"
-    }
-    
-    
-    func feedbackBannerRequestedExit(status: MVFeedbackBannerExitStatus) {
+    // MVFeedbackBannerControllerDelegate
+    func feedbackBanner(_ banner: MVFeedbackBanner, requestedExitWithStatus status: MVFeedbackBannerExitStatus) {
+
         switch status {
         case .negativeDismiss: break
         case .negativeAction: break
         case .positiveDismiss: break
         case .positiveAction: break
         }
-        
-        bannerPresenter.setBannerHidden(true, animated: true)
+
+        if banner == topFeedbackBanner {
+            topBannerPresenter.setBannerHidden(true, animated: true)
+        }
+        else {
+            bottomBannerPresenter.setBannerHidden(true, animated: true)
+        }
     }
     
     @IBAction func resetButtonPressed(sender: UIButton) {
         
-        bannerController.reset()
-        bannerPresenter.setBannerHidden(false, animated: true)
+        bottomBannerController.reset()
+        bottomBannerPresenter.setBannerHidden(false, animated: true)
     }
 
     func createBannerController(banner: MVFeedbackBanner, delegate: MVFeedbackBannerControllerDelegate) -> MVFeedbackBannerController {

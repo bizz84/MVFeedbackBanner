@@ -50,7 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Feedback form" id="dDE-Y8-YEx"/>
                     <connections>
-                        <outlet property="feedbackBanner" destination="wHS-OY-fSS" id="Ie6-yq-aNY"/>
+                        <outlet property="topFeedbackBanner" destination="wHS-OY-fSS" id="KiI-Mq-ggI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
