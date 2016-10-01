@@ -30,8 +30,7 @@
                                     <segue destination="BfG-sD-rR8" kind="show" id="Hca-9G-MtS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-uv-K9y">
-                                <frame key="frameInset" minX="170" minY="373" width="39" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nx-uv-K9y">
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetButtonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UO1-dg-uNa"/>

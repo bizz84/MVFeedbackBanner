@@ -8,15 +8,15 @@
 
 import UIKit
 
-public enum RoundedButtonStyle: Int {
+public enum MVRoundedButtonStyle: Int {
     case fill
     case border
 }
 
 @IBDesignable
-public class RoundedButton: UIButton {
+public class MVRoundedButton: UIButton {
     
-    @IBInspectable public var buttonStyle: RoundedButtonStyle = .border {
+    @IBInspectable public var buttonStyle: MVRoundedButtonStyle = .border {
         didSet {
             switch buttonStyle {
             case .border:

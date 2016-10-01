@@ -11,8 +11,8 @@ import UIKit
 @IBDesignable public class MVFeedbackBanner: UIViewNibLoadable {
 
     @IBOutlet var titleLabel: UILabel!
-    @IBOutlet var negativeButton: RoundedButton!
-    @IBOutlet var positiveButton: RoundedButton!
+    @IBOutlet var negativeButton: MVRoundedButton!
+    @IBOutlet var positiveButton: MVRoundedButton!
     
     override public func awakeFromNib() {
         negativeButton.buttonStyle = .border
