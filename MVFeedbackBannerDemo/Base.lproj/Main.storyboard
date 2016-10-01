@@ -66,7 +66,7 @@
                             <constraint firstItem="wHS-OY-fSS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oFi-iX-bKm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Banners" id="dDE-Y8-YEx"/>
+                    <navigationItem key="navigationItem" title="MVFeedbackBanner" id="dDE-Y8-YEx"/>
                     <connections>
                         <outlet property="bottomSwitch" destination="7yb-fu-YGu" id="aLv-xF-e66"/>
                         <outlet property="topFeedbackBanner" destination="wHS-OY-fSS" id="KiI-Mq-ggI"/>
