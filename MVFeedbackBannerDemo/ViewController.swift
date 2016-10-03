@@ -22,6 +22,8 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
     
     @IBOutlet var topSwitch: UISwitch!
     
+    @IBOutlet var topOutputLabel: UILabel!
+    
     // Bottom banner
     var bottomFeedbackBanner: MVFeedbackBanner!
 
@@ -31,6 +33,8 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
 
     @IBOutlet var bottomSwitch: UISwitch!
 
+    @IBOutlet var bottomOutputLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,34 +43,43 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
         
         topBannerPresenter = MVFeedbackBannerPresenterFadeIn(parentView: self.view, banner: topFeedbackBanner)
         
+        topOutputLabel.text = "Last action: none"
+        
         // Bottom
         bottomFeedbackBanner = MVFeedbackBanner()
 
         bottomBannerController = createBannerController(banner: bottomFeedbackBanner, delegate: self)
 
         bottomBannerPresenter = MVFeedbackBannerPresenterSlideFromBottom(parentView: self.view, banner: bottomFeedbackBanner)
+        
+        bottomOutputLabel.text = "Last action: none"
     }
     
     
     // MVFeedbackBannerControllerDelegate
     func feedbackBanner(_ banner: MVFeedbackBanner, requestedExitWithStatus status: MVFeedbackBannerExitStatus) {
 
-        switch status {
-        case .negativeDismiss: break
-        case .negativeAction:
-            self.present(makeAlertController(title: "Great!", message: "Opens Feedback form / email"), animated: true, completion: nil)
-        case .positiveDismiss: break
-        case .positiveAction:
-            self.present(makeAlertController(title: "Great!", message: "Opens App Store"), animated: true, completion: nil)
-        }
+        let exitString = stringForExit(status: status)
 
         if banner == topFeedbackBanner {
+            topOutputLabel.text = "Last action: \(exitString)"
             topSwitch.isOn = false
             topBannerPresenter.setBannerHidden(true, animated: true)
         }
         else {
+            bottomOutputLabel.text = "Last action: \(exitString)"
             bottomSwitch.isOn = false
             bottomBannerPresenter.setBannerHidden(true, animated: true)
+        }
+    }
+    
+    func stringForExit(status: MVFeedbackBannerExitStatus) -> String {
+        
+        switch status {
+        case .negativeDismiss: return "Dismiss"
+        case .negativeAction: return "Show Feedback Form"
+        case .positiveDismiss: return "Dismiss"
+        case .positiveAction: return "Rate on App Store"
         }
     }
     
@@ -88,12 +101,6 @@ class ViewController: UIViewController, MVFeedbackBannerControllerDelegate {
         }
     }
     
-    func makeAlertController(title: String, message: String) -> UIAlertController {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        return alert
-    }
-
 
     func createBannerController(banner: MVFeedbackBanner, delegate: MVFeedbackBannerControllerDelegate) -> MVFeedbackBannerController {
         
