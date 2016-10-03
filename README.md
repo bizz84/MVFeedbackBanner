@@ -14,7 +14,7 @@ Ask the user to rate your app or provide feedback with a simple customisable ban
 
 ## Preview
 
-<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/feedback-flow.png" width="320">
+<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/feedback-flow.png">
 
 **MVFeedbackBanner** is a plug and play component that can be used to easily integrate a simple flow to ask the user for feedback or to rate the app.
 
