@@ -40,6 +40,19 @@ pod 'MVFeedbackBanner'
 
 Once installed, just ```import MVFeedbackBanner``` in your classes and you're good to go.
 
+## Usage
+
+See included sample demo app.
+
+## Bonus: [UIView+NibLoadable](https://github.com/bizz84/MVFeedbackBanner/raw/master/Sources/UIView+NibLoadable)
+
+This project includes some convenience Swift code for loading a UIView from nib programmatically, so that you just write this:
+
+```swift
+let banner = MVFeedbackBanner()
+```
+
+And the banner automatically loads from the associated xib file.
 
 ## License
 
