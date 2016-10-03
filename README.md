@@ -1,6 +1,5 @@
 # MVFeedbackBanner
 
-Ask the user to rate your app or provide feedback with a simple customisable banner.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat
             )](http://mit-license.org)
@@ -12,34 +11,29 @@ Ask the user to rate your app or provide feedback with a simple customisable ban
            )](https://github.com/bizz84/MVFeedbackBanner/issues)
 [![Cocoapod](http://img.shields.io/cocoapods/v/MVFeedbackBanner.svg?style=flat)](http://cocoadocs.org/docsets/MVFeedbackBanner/)
 
-## Preview
+**Ask the user to rate your app or give feedback with a simple customisable banner.**
+
+Inspired by [this Medium story](https://medium.com/budi-brain/designing-in-app-survey-6163304e88dd#.kata5zlku) about designing an in-app survey.
 
 <img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/feedback-flow.png">
-
-**MVFeedbackBanner** is a plug and play component that can be used to easily integrate a simple flow to ask the user for feedback or to rate the app.
-
-It has been inspired by [this Medium story](https://medium.com/budi-brain/designing-in-app-survey-6163304e88dd#.kata5zlku) about designing an in-app survey.
 
 ## Features
 
 * Super easy integration with **Interface Builder** or **programmatically**.
-* **IBDesignable** support
-* Customisable texts and background colors
-
-## Screen flows
-
-An out of the box controller is provided with two possible flows:
-
-**Are you enjoying this app?**
-
-* **Yes**: Great! Let other know what you think of this app
-	* **No thanks**: Dismiss
-	* **Rate App**: Open App Store page
-* **No**: Could you tell me what happened?
-	* **No**: Dismiss
-	* **Yes**: Open feedback form / email
+* **IBDesignable** support.
+* Customisable texts and background colors.
 
 ## Installation
+
+### CocoaPods
+
+**MVFeedbackBanner** can be installed as a [CocoaPod](https://cocoapods.org/) and builds as a Swift framework. To install, include this in your Podfile:
+
+```ruby
+pod 'MVFeedbackBanner'
+```
+
+Once installed, just ```import MVFeedbackBanner``` in your classes and you're good to go.
 
 
 ## License
