@@ -15,7 +15,7 @@
 
 Inspired by [this Medium story](https://medium.com/budi-brain/designing-in-app-survey-6163304e88dd#.kata5zlku) about designing an in-app survey.
 
-<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/video-preview.gif">
+<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/video-preview.gif" width="320">
 
 ## Features
 
