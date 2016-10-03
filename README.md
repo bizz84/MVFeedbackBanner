@@ -15,13 +15,18 @@
 
 Inspired by [this Medium story](https://medium.com/budi-brain/designing-in-app-survey-6163304e88dd#.kata5zlku) about designing an in-app survey.
 
-<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/feedback-flow.png">
+<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/video-preview.png">
 
 ## Features
 
-* Super easy integration with **Interface Builder** or **programmatically**.
-* **IBDesignable** support.
-* Customisable texts and background colors.
+* Super easy integration with **Interface Builder** or **programmatically**
+* **IBDesignable** support
+* Customisable texts and background colors
+
+## Banner flows
+
+<img src="https://github.com/bizz84/MVFeedbackBanner/raw/master/screenshots/feedback-flow.png">
+
 
 ## Installation
 
