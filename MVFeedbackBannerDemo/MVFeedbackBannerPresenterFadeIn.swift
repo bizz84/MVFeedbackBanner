@@ -21,6 +21,15 @@ class MVFeedbackBannerPresenterFadeIn: NSObject, MVFeedbackBannerPresenter {
         self.banner = banner
     }
     
+    var bannerHidden: Bool {
+        get {
+            return banner.alpha == 0.0
+        }
+        set {
+            setBannerHidden(newValue, animated: false)
+        }
+    }
+
     func setBannerHidden(_ hidden: Bool, animated: Bool) {
 
         let duration = animated ? 0.2 : 0.0

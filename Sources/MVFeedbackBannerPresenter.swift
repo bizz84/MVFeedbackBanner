@@ -8,5 +8,7 @@
 
 public protocol MVFeedbackBannerPresenter {
     
+    var bannerHidden: Bool { get set }
+    
     func setBannerHidden(_ hidden: Bool, animated: Bool)
 }

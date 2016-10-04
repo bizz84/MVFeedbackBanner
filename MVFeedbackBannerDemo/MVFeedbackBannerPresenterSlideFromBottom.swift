@@ -16,6 +16,15 @@ class MVFeedbackBannerPresenterSlideFromBottom: NSObject, MVFeedbackBannerPresen
     unowned let banner: MVFeedbackBanner
     
     let bannerBottomConstraint: NSLayoutConstraint
+    
+    var bannerHidden: Bool {
+        get {
+            return banner.alpha == 0.0
+        }
+        set {
+            setBannerHidden(newValue, animated: false)
+        }
+    }
 
     func setBannerHidden(_ hidden: Bool, animated: Bool) {
 
