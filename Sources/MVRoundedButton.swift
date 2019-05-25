@@ -16,7 +16,7 @@ public enum MVRoundedButtonStyle: Int {
 @IBDesignable
 public class MVRoundedButton: UIButton {
     
-    @IBInspectable public var buttonStyle: MVRoundedButtonStyle = .border {
+  public var buttonStyle: MVRoundedButtonStyle = .border {
         didSet {
             switch buttonStyle {
             case .border:
