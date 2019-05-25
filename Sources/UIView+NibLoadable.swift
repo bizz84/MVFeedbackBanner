@@ -25,7 +25,7 @@ public extension NibLoadable where Self: UIView {
             print("Could not load nib with name: \(nibName)")
             return
         }
-        view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+        view.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         view.frame = bounds
 
         self.addSubview(view)
